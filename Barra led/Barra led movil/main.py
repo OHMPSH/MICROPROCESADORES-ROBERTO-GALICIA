@@ -10,8 +10,8 @@ import json       # Para trabajar con datos en formato JSON
 led_onboard = Pin("LED", Pin.OUT)
 
 # Configuración de tu red WiFi
-ssid = 'Totalplay-2.4G-5a18'
-password = 'B4A9wGff5PJX49xc'
+ssid = ''
+password = ''
 
 # Configuración de los pines de los LEDs que se van a usar, en una lista
 led_pins = [Pin(16, Pin.OUT), Pin(17, Pin.OUT), Pin(18, Pin.OUT), Pin(19, Pin.OUT),
@@ -228,5 +228,6 @@ def start_server():
             last_step_time = current_time
             
         time.sleep(0.005)
+
 
 start_server()
