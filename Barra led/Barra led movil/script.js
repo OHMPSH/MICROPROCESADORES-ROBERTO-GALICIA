@@ -1,6 +1,6 @@
 const keys = document.querySelectorAll('.key');
 const statusText = document.getElementById('status');
-const picoIp = '192.168.100.14'; // ⚠️ Reemplaza esta IP con la de tu Pico W
+const picoIp = ''; // ⚠️ Reemplaza esta IP con la de tu Pico W
 
 keys.forEach(key => {
     key.addEventListener('click', () => {
@@ -33,4 +33,5 @@ async function sendStatus(value) {
         statusText.textContent = `Error de red: ${error.message}`;
         console.error('Error de red:', error);
     }
+
 }
